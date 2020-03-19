@@ -1,10 +1,10 @@
+#import xlrd, matplotlib.pyplot, and math libraries
 import xlrd
 import matplotlib.pyplot as plt
 import math 
-
 from xlrd import open_workbook
 
-
+#opens Gaia data excel file from computer
 bench = open_workbook('/Users/adbreeze13/Desktop/UNCResearch/Test/finaldata.xlsx',on_demand=True)
 
 appmagcol1 = []
