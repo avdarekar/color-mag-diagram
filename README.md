@@ -7,7 +7,6 @@ This program uses data from the [Gaia archive](https://gea.esac.esa.int/archive/
 * Obtaining Data
 * Installation 
 * Usage
-* License
 
 ## File Descriptions
 * Colormag.py: this is the Python program I wrote to create the color-magnitude diagram
@@ -35,8 +34,6 @@ To successfully run this program on your local computer:
 
 ## Usage
 After installation, run the program. Keep in mind that it will take some time for the program to run due to the large amount of data.
-
-## License
 
 
 
