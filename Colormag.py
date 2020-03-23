@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import math 
 from xlrd import open_workbook
 
-#open Gaia data excel file from computer
+#open Gaia data .xlsx file from computer
 bench = open_workbook('/Users/adbreeze13/Desktop/UNCResearch/Test/finaldata.xlsx',on_demand=True)
 
 #declare arrays for apparent magnitude, bp-rp, parallax, parallax over error, g mean flux over error, bp flux over error, rp flux over error, and absolute magnitude respectively
@@ -17,7 +17,7 @@ bpfloecol6 = []
 rpfloecol7 = []
 absmag = []
 
-#iterate over each row in excel file
+#iterate over each row in .xlsx file
 for name in bench.sheet_names():
     sheetnew = bench.sheet_by_name(name)
     for row in range(0, 100000):
