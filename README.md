@@ -5,7 +5,7 @@ This program uses data from the [Gaia archive](https://gea.esac.esa.int/archive/
 ## Table of Contents
 * File Descriptions
 * Obtaining Data
-* [Installation] (#installation) 
+* Installation 
 * Usage
 * License
 
