@@ -32,8 +32,11 @@ To successfully run this program on your local computer:
 4. Download the Colormag.py file to your computer.
 5. Install xlrd, matplotlib.pyplot, and math python libraries.
 6. Replace the location of the .xlsx file with the location of the .xlsx file on your computer. 
-7. Run the program. 
 
 ## Usage
+After installation, run the program. Keep in mind that it will take some time for the program to run due to the large amount of data.
+
+## License
+
 
 
