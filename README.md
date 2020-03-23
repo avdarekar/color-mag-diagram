@@ -3,9 +3,9 @@
 This program uses data from the [Gaia archive](https://gea.esac.esa.int/archive/) to create a color-magnitude diagram of stars with a parallax greater than or equal to 10.  
 
 ## Table of Contents
-* [File Descriptions] (##filedescriptions)
+* File Descriptions
 * Obtaining Data
-* Installation 
+* [Installation] (#installation) 
 * Usage
 * License
 
