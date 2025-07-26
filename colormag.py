@@ -75,5 +75,5 @@ def plot_color_magnitude():
     plt.show()
 
 
-# how to run run script:
-plot_color_magnitude()
+# how to run script:
+# plot_color_magnitude()
