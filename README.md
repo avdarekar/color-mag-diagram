@@ -11,7 +11,6 @@ This program uses data from the [Gaia archive](https://gea.esac.esa.int/archive/
 ## File Descriptions
 * colormag.py: this is the Python program I wrote to create the color-magnitude diagram
 * colormag_diagram.png: this is a screenshot of the color-magnitude diagram that Colormag.py created
-* config.py: this is a config file where the user specifies the local filepath to the Gaia dataset
 
 ## Obtaining Data
 Data was obtained from the [Gaia archive](https://gea.esac.esa.int/archive/). This SQL statement was used in the Gaia archive to extract the data:
