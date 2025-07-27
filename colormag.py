@@ -2,17 +2,18 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-from config import file_path
 
-
-def load_data() -> pd.DataFrame:
+def load_data(filepath: str) -> pd.DataFrame:
     """
     Load Gaia data.
+
+    Arguments:
+        filepath: path to Gaia data file
 
     Returns:
         data: DataFrame containing Gaia data
     """
-    data = pd.read_csv(file_path)
+    data = pd.read_csv(filepath)
     return data
 
 
@@ -51,16 +52,21 @@ def convert_to_absolute_magnitude(
     Returns:
         absolute_magnitude: pandas Series containing absolute magnitudes
     """
-    absolute_magnitude = apparent_magnitude - (5 * np.log10((1000 / parallax))) + 5
+    absolute_magnitude = (
+        apparent_magnitude - (5 * np.log10((1000 / parallax))) + 5
+    )
 
     return absolute_magnitude
 
 
-def plot_color_magnitude():
+def plot_color_magnitude(filepath: str):
     """
     Create color magnitude plot using Gaia data.
+
+    Arguments:
+        filepath: path to Gaia data file
     """
-    gaia_data = load_data()
+    gaia_data = load_data(filepath)
     gaia_data = subset_data(gaia_data)
 
     absolute_magnitude = convert_to_absolute_magnitude(
@@ -76,4 +82,6 @@ def plot_color_magnitude():
 
 
 # how to run script:
-# plot_color_magnitude()
+# plot_color_magnitude(
+#     "/Users/adarekar/Desktop/UNCResearch/Test/rawdata.csv"
+# )
