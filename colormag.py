@@ -13,8 +13,11 @@ def load_data(filepath: str) -> pd.DataFrame:
     Returns:
         data: DataFrame containing Gaia data
     """
-    data = pd.read_csv(filepath)
-    return data
+    try:
+        data = pd.read_csv(filepath)
+        return data
+    except FileNotFoundError:
+        print("File not found.")
 
 
 def subset_data(data: pd.DataFrame) -> pd.DataFrame:
@@ -82,6 +85,4 @@ def plot_color_magnitude(filepath: str):
 
 
 # how to run script:
-# plot_color_magnitude(
-#     "/Users/adarekar/Desktop/UNCResearch/Test/rawdata.csv"
-# )
+# plot_color_magnitude("filepath.csv")
