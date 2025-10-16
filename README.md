@@ -4,8 +4,7 @@ This program uses data from the [Gaia archive](https://gea.esac.esa.int/archive/
 
 ## File Descriptions
 * colormag.py: this is the Python program I wrote to create the color-magnitude diagram
-* colormag_diagram.png: this is a screenshot of the color-magnitude diagram that Colormag.py created
-* config.py: this is a config file where the user specifies the local filepath to the Gaia dataset
+* colormag_diagram.png: this is a screenshot of the color-magnitude diagram that colormag.py created
 
 ## Obtaining Data
 Data was obtained from the [Gaia archive](https://gea.esac.esa.int/archive/). This SQL statement was used in the Gaia archive to extract the data:
@@ -23,7 +22,6 @@ To successfully run this program locally:
 1. Run the SQL statement above in the [Gaia archive](https://gea.esac.esa.int/archive/). 
 2. Download the data as a csv file. 
 3. Clone this repo and install requirements in a virtual environment using the requirements.txt file. 
-4. Add the filepath to the dataset in config.py. 
 
 ## Usage
 After installation, run the plot_color_magnitude() function in colormag.py.
