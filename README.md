@@ -2,12 +2,6 @@
 ## Description
 This program uses data from the [Gaia archive](https://gea.esac.esa.int/archive/) to create a color-magnitude diagram of stars with a parallax greater than or equal to 10.  
 
-## Table of Contents
-* File Descriptions
-* Obtaining Data
-* Installation 
-* Usage
-
 ## File Descriptions
 * colormag.py: this is the Python program I wrote to create the color-magnitude diagram
 * colormag_diagram.png: this is a screenshot of the color-magnitude diagram that Colormag.py created
